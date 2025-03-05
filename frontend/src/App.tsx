@@ -18,6 +18,15 @@ function Welcome() {
   return <h1>NCAA Basketball Teams</h1>;
 }
 
+function Description() {
+  return (
+    <h2>
+      This Page will show a list of Schools with NCAA BAsketball teams. It also
+      shows what their Mascot is and where they are located.
+    </h2>
+  );
+}
+
 //This is a team "card", it is an individual component for each team with the information you want
 function Team({ school, name, city, state }: TeamType) {
   return (
@@ -50,6 +59,7 @@ function App() {
   return (
     <>
       <Welcome />
+      <Description />
       <TeamList />
     </>
   );
