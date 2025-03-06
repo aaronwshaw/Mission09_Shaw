@@ -30,13 +30,13 @@ function Description() {
 //This is a team "card", it is an individual component for each team with the information you want
 function Team({ school, name, city, state }: TeamType) {
   return (
-    <>
-      <h2>{school}</h2>
-      <h3>Mascot: {name}</h3>
-      <h3>
+    <div className="max-w-sm rounded-lg shadow-md p-4 border border-gray-200 bg-white">
+      <h2 className="text-xl font-bold">{school}</h2>
+      <h3 className="text-gray-700">Mascot: {name}</h3>
+      <h3 className="text-gray-600">
         Location: {city}, {state}
       </h3>
-    </>
+    </div>
   );
 }
 
